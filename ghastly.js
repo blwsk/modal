@@ -22,7 +22,11 @@
             'position' : 'fixed',
             'top' : 0,
             'left' : 0,
+<<<<<<< HEAD
             'opacity' : 0,
+=======
+       		'opacity' : 0,
+>>>>>>> 99c096d25d51e918d934ecc7eb4a4ce93440bb6d
             'margin-left' : ($(window).width() - $(modalId).outerWidth()) / 2,
             'margin-top' : ($(window).height() - $(modalId).outerHeight()) / 2,
             'z-index': 2000
