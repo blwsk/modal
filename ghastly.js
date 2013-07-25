@@ -8,24 +8,24 @@
         $("body").append(bg);
         $("#modal-bg").css({
             "position" : "fixed",
-            "z-index" : 100,
+            "background" : "rgba(0,0,0,0.7)",
             "top" : 0,
             "left" : 0,
-            "height" : 100 + "%",
-            "width" : 100 + "%",
-            "background" : "rgba(0,0,0,0.5)"
+            "height" : "100%",
+            "width" : "100%",
+            "z-index" : 1000
         });
         
         var modalId = $(this).attr("href");
         $(modalId).css({
             'display' : 'block',
-        	'position' : 'fixed',
+            'position' : 'fixed',
             'top' : 0,
             'left' : 0,
        		'opacity' : 0,
- 			'z-index': 200,
             'margin-left' : ($(window).width() - $(modalId).outerWidth()) / 2,
             'margin-top' : ($(window).height() - $(modalId).outerHeight()) / 2,
+            'z-index': 2000
         });
         $(modalId).fadeTo(200,1);
         
