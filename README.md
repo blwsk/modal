@@ -1,4 +1,4 @@
-# ghastly
+# ghastly-modal
 
 A lightweight jQuery modal
 
