@@ -17,7 +17,8 @@ A lightweight jQuery modal
 <p id="test" style="display:none;">I'm a modal</p>
 ```
 
-* Note that the `href` attribute in the `a` tag matches the `id` of the modal content. Also, by default, the modal will appear and the content will overlay "as is". This means that you must add something such as...
+* Note that the `href` attribute in the `a` tag matches the `id` of the modal content.
+* Also, by default, the modal will appear and the content will overlay "as is". This means that you must add something such as...
 
 ```
 .ghastly {
