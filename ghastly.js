@@ -7,14 +7,16 @@
         var bg = $("<div id='modal-bg'></div>");
         $("body").append(bg);
         $("#modal-bg").css({
-            "position" : "fixed",
-            "background" : "rgba(0,0,0,0.7)",
-            "top" : 0,
-            "left" : 0,
-            "height" : "100%",
-            "width" : "100%",
-            "z-index" : 1000
+            "position": "fixed",
+            "background": "rgba(0,0,0,0.7)",
+            "top": 0,
+            "left": 0,
+            "height": "100%",
+            "width": "100%",
+            "z-index": 1000,
+            "opacity": 0
         });
+        $("#modal-bg").fadeTo(200, 1);
         
         var modalId = $(this).attr("href");
         $(modalId).css({
