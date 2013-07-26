@@ -20,17 +20,15 @@
         
         var modalId = $(this).attr("href");
         $(modalId).css({
-            'display' : 'block',
-            'position' : 'fixed',
-            'top' : 0,
-            'left' : 0,
-            'opacity' : 0,
-       		'opacity' : 0,
-            'margin-left' : ($(window).width() - $(modalId).outerWidth()) / 2,
-            'margin-top' : ($(window).height() - $(modalId).outerHeight()) / 2,
+            'display': 'block',
+            'position': 'fixed',
+            'left': (($(window).width() - $(modalId).outerWidth()) / 2),
+            'top': (($(window).height() - $(modalId).outerHeight()) / 2),
+            'opacity': 0,
             'z-index': 2000
         });
-        $(modalId).fadeTo(200,1);
+        $(modalId).fadeTo(200, 1);
+        $("html, body").scrollTop((($(window).height() - $(modalId).outerHeight()) / 2));
         
         $("#modal-bg").click( function() {
             close(modalId);
