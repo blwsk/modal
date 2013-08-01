@@ -4,6 +4,9 @@
 (function( $ ){
     
     $.fn.modal = function() {
+        var t = Math.floor($("body").scrollTop());
+        $("#blah").html(t);
+
         var bg = $("<div id='modal-bg'></div>");
         $("body").append(bg);
         $("#modal-bg").css({
@@ -28,7 +31,7 @@
             'z-index': 2000
         });
         $(modalId).fadeTo(200, 1);
-        $("html, body").scrollTop((($(window).height() - $(modalId).outerHeight()) / 2));
+        $(window).scrollTop(t - (($(window).height() - $(modalId).outerHeight()) / 2) + 1);
         
         $("#modal-bg").click( function() {
             close(modalId);
