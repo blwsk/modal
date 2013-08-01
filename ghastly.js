@@ -5,8 +5,6 @@
     
     $.fn.modal = function() {
         var t = Math.floor($("body").scrollTop());
-        $("#blah").html(t);
-
         var bg = $("<div id='modal-bg'></div>");
         $("body").append(bg);
         $("#modal-bg").css({
