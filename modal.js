@@ -1,4 +1,4 @@
-// Ghastly.js - a lightweight jQuery modal
+// modal.js - a lightweight jQuery modal
 // Created by Kevin Bielawski
 
 (function( $ ){

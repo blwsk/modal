@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>blwsk modal demo</title>
+
+<style>
+
+* {
+  margin: 0; padding: 0; border: 0; outline: none;
+}
+
+html,
+body {
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.link {
+  color: rgb(211,213,215);
+  font-size: 200px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+</style>
+
+</head>
+<body>
+
+  <a rel="modal" class="link" href="#test">Click</a>
+
+  <!-- modal content -->
+  <div id="test" style="display:none;">
+    <img src="img.jpg">
+  </div>
+
+<script src="jquery.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>
